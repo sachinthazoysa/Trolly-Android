@@ -1,2 +1,2 @@
+rootProject.name='AuthenticatorApp'
 include ':app'
-rootProject.name='Trolly'

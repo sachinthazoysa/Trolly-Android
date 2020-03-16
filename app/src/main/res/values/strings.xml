@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Trolly</string>
+    <string name="app_name">Trolly </string>
+    <string name="authenticator_app">Trolly</string>
 </resources>
