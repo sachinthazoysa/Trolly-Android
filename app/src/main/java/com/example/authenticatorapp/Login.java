@@ -26,6 +26,8 @@ import com.google.firebase.auth.FirebaseAuth;
     Button mLoginBtn;
     TextView mCreateBtn, forgotTextLink;
     FirebaseAuth fAuth;
+    TextView adminButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,6 +130,14 @@ import com.google.firebase.auth.FirebaseAuth;
         });
 //
 
+        adminButton = findViewById(R.id.adminBtn);
+        adminButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, AdminPanel.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
