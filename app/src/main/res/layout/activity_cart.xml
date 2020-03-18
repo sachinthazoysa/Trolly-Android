@@ -19,44 +19,99 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.105"
-        android:textColor="#ffffff"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="#ffffff"/>
+
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="165dp"
+        android:layout_width="150dp"
         android:layout_height="26dp"
-        android:text="TextView"
+        android:text="Magee Nuldes 50g"
         app:layout_constraintEnd_toStartOf="@+id/textView16"
-        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="279dp" />
+        tools:layout_editor_absoluteY="311dp"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="126dp"
+        android:layout_width="30dp"
         android:layout_height="26dp"
-        android:layout_marginEnd="60dp"
-        android:text="TextView"
+        android:layout_marginEnd="160dp"
+        android:text="2"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
-        app:layout_constraintEnd_toEndOf="parent" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="165dp"
+        android:layout_width="150dp"
         android:layout_height="26dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="315dp" />
+        android:gravity="center"
+        android:text="Egg (brown)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.062" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="126dp"
+        android:layout_width="30dp"
         android:layout_height="26dp"
-        android:text="TextView"
+        android:text="1"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView17"
-        tools:layout_editor_absoluteX="225dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="88dp"
+        android:layout_height="26dp"
+        android:text="My Items"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="65dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:text="100.00/="
+        android:gravity="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="65dp"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:text="100.00/="
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView18"
+        tools:layout_editor_absoluteX="275dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.4" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
