@@ -11,6 +11,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +24,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
  public class Login extends AppCompatActivity {
     EditText mEmail, mPassword;
-    Button mLoginBtn;
+    ImageButton mLoginBtn;
     TextView mCreateBtn, forgotTextLink;
     FirebaseAuth fAuth;
     TextView adminButton;
