@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -23,6 +24,7 @@ public class Profile extends AppCompatActivity {
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
+    Button editProfileBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,7 @@ public class Profile extends AppCompatActivity {
         phone = findViewById(R.id.ProfilePhone);
         fullname=findViewById(R.id.ProfileName);
         email=findViewById(R.id.ProfileMail);
+        editProfileBtn =findViewById(R.id.EditProfile);
 
         fAuth = FirebaseAuth.getInstance();
         fStore =FirebaseFirestore.getInstance();
@@ -45,6 +48,13 @@ public class Profile extends AppCompatActivity {
                 fullname.setText(documentSnapshot.getString("fullName"));
                 email.setText(documentSnapshot.getString("email"));
 
+            }
+        });
+
+        editProfileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),EditProfile.class));
             }
         });
 
