@@ -11,6 +11,7 @@ public class Categories extends AppCompatActivity {
 
     ImageView backButton;
     ImageView addCategoryButton;
+    ImageView vegetableButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class Categories extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
     }
 }
