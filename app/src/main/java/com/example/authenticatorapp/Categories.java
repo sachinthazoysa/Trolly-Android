@@ -2,6 +2,7 @@ package com.example.authenticatorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 public class Categories extends AppCompatActivity {
 
     ImageView backButton;
+    ImageView addCategoryButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,5 +24,15 @@ public class Categories extends AppCompatActivity {
                 finish();
             }
         });
+
+        addCategoryButton = findViewById(R.id.categoryBtn);
+        addCategoryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Categories.this, AddCategory.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
