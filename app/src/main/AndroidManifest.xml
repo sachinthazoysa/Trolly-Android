@@ -11,24 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PreviousOrders"></activity>
-        <activity android:name=".Cart" />
-        <activity android:name=".AdminPanel" />
+        <activity android:name=".ItemList"></activity>
+        <activity android:name=".UpdateItems" />
+        <activity android:name=".AddItems" />
         <activity android:name=".CustomerRequirementForm" />
-        <activity android:name=".Categories" />
-        <activity android:name=".AddCategory" />
         <activity android:name=".Profile" />
-        <activity
-            android:name=".EditProfile"
-            android:exported="true" />
-        <activity android:name=".Login">
+        <activity android:name=".Login" />
+        <activity android:name=".Register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register" />
         <activity android:name=".MainActivity" />
 
         <meta-data
