@@ -15,11 +15,64 @@
       },
       "oauth_client": [
         {
+          "client_id": "667144964654-35dm2cm8pv2a75nt5lq36i3kbc5mh7jm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.authenticatorapp",
+            "certificate_hash": "45f415ef6b4efc635f2e9c49e6a04861f4d98f8c"
+          }
+        },
+        {
+          "client_id": "667144964654-432e0kvm5k1prd4uktbrdri7qug6t35t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.authenticatorapp",
+            "certificate_hash": "13a03f13d46e38bdf6df20b71d05b2c4fc1c134c"
+          }
+        },
+        {
           "client_id": "667144964654-pb8nbcur30is17p2hqqnqbgupmfttq1v.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.authenticatorapp",
             "certificate_hash": "b3769f39849f6f28fe2e9db1eedd23423f7959b3"
+          }
+        },
+        {
+          "client_id": "667144964654-cbhdvaef35reqe8nqs2e6hdpp2i56mfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs4uJLTQX18xj1BoZKXHLmmCajJpD0dHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667144964654-cbhdvaef35reqe8nqs2e6hdpp2i56mfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667144964654:android:5e5c94f912f3d3b8672dbf",
+        "android_client_info": {
+          "package_name": "com.example.trolly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667144964654-0uo60p7sodc02783lijol81krfb51ise.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trolly",
+            "certificate_hash": "13a03f13d46e38bdf6df20b71d05b2c4fc1c134c"
           }
         },
         {
