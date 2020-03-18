@@ -11,7 +11,7 @@ public class Categories extends AppCompatActivity {
 
     ImageView backButton;
     ImageView addCategoryButton;
-    ImageView vegetableButton;
+    ImageView categoryDetailsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,14 @@ public class Categories extends AppCompatActivity {
             }
         });
 
+        categoryDetailsButton = findViewById(R.id.categoryDetailsBtn);
+        categoryDetailsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Categories.this, CategoryDetails.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
