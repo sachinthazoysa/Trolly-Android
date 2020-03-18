@@ -14,6 +14,8 @@
         <activity android:name=".Cart"/>
         <activity android:name=".AdminPanel" />
         <activity android:name=".CustomerRequirementForm" />
+        <activity android:name=".Categories"/>
+        <activity android:name=".AddCategory"/>
         <activity android:name=".Profile" />
 
         <activity android:name=".Login" >
