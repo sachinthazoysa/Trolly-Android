@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="164dp"
         android:fontFamily="@font/alfa_slab_one"
         android:padding="10sp"
         android:shadowColor="#131313"
@@ -27,7 +27,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="232dp"
         android:fontFamily="@font/aldrich"
         android:shadowColor="#2E2C2C"
         android:text="Create New Account"
@@ -35,8 +35,9 @@
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/fullName"
@@ -44,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@android:color/background_dark"
+        android:background="@color/design_default_color_primary_dark"
         android:ems="10"
         android:hint="Full name"
         android:inputType="textPersonName"
@@ -65,12 +66,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:background="@android:color/background_dark"
+        android:background="@color/design_default_color_primary_dark"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
         android:padding="10sp"
-        android:textColor="#E8E0E0"        android:textColorHint="#EFE6E6"
+        android:textColor="#E8E0E0"
+        android:textColorHint="#EFE6E6"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,13 +85,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:background="@android:color/background_dark"
+        android:background="@color/design_default_color_primary_dark"
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
         android:padding="10sp"
+        android:textColor="#E8E0E0"
         android:textColorHint="#EFE6E6"
-        android:textColor="#E8E0E0"        android:textSize="12sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Email" />
@@ -101,7 +104,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:background="@android:color/background_dark"
+        android:background="@color/design_default_color_primary_dark"
         android:ems="10"
         android:hint="phone"
         android:inputType="textPhonetic"
@@ -113,44 +116,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
-    <Button
-        android:id="@+id/registerBtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="64dp"
-        android:text="Register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone" />
-
     <TextView
         android:id="@+id/createText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
         android:text="Already Registered? Login Here"
         android:textColor="#FFEB3B"
         android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/registerBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/ProfilePhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
-        android:background="@android:color/black"
+        android:background="@color/design_default_color_primary_dark"
         android:text="    Add profile photo    "
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="125dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageButton
+        android:id="@+id/registerBtn"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="204dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="56dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminBtn"
+        app:srcCompat="@drawable/reg" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
