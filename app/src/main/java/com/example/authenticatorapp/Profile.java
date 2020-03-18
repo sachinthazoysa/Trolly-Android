@@ -24,7 +24,7 @@ public class Profile extends AppCompatActivity {
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
-    Button editProfileBtn;
+    TextView editProfileBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
