@@ -8,7 +8,7 @@
     tools:context=".Cart">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/EditProfileTitle"
         android:layout_width="294dp"
         android:layout_height="49dp"
         android:text="Welcome to Cart"

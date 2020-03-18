@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Trolly </string>
     <string name="authenticator_app">Trolly</string>
+    <string name="EditProfileTitle">Edit Profile</string>
 </resources>
