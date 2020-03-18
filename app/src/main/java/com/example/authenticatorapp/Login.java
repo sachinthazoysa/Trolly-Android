@@ -11,6 +11,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,9 +24,11 @@ import com.google.firebase.auth.FirebaseAuth;
 
  public class Login extends AppCompatActivity {
     EditText mEmail, mPassword;
-    Button mLoginBtn;
+    ImageButton mLoginBtn;
     TextView mCreateBtn, forgotTextLink;
     FirebaseAuth fAuth;
+    TextView adminButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,6 +131,14 @@ import com.google.firebase.auth.FirebaseAuth;
         });
 //
 
+        adminButton = findViewById(R.id.adminBtn);
+        adminButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, AdminPanel.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
